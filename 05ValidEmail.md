@@ -1,0 +1,1 @@
+Napisz funkcje ktora sprawdzi czy format emaila jest prawidlowy. Narazie zalozmy tylko ze email jest ok jesli lancuch znakow zawiera "@". Konsola ma odeslac true jesli email jest prawidlowy albo false jesli nie.

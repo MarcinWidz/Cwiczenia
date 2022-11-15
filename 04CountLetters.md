@@ -1,0 +1,1 @@
+Napisz funkcje ktora policzy i odesle liczbe liter "e" w zdaniu zachowanym w zmiennej str
