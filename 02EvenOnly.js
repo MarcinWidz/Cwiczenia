@@ -2,6 +2,5 @@ const limit = 20;
 
 // zacznij tu
 
-
-// chuj dupa kurwa cipa
+// chuj dupa
 // skoncz tu
