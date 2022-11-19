@@ -9,3 +9,5 @@ let var2 = 20;
 
 console.log(var1); // Ma odeslac 20
 console.log(var2); // Ma odeslac 10
+
+//Perfect

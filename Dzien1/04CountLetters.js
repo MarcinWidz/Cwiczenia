@@ -1,4 +1,4 @@
-const str = "Jestem hardkorem!";
+const str = "Jesteeem hardkorem!";
 let counter = 0; // zawiera liczbe e
 
 // poczatek kodu
@@ -13,3 +13,5 @@ while (i <= len) {
 // koniec kodu
 
 console.log(counter);
+
+//Perfect

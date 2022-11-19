@@ -10,3 +10,5 @@ while (i <= limit) {
 }
 
 // skoncz tu
+
+//perfect

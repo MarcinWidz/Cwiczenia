@@ -14,3 +14,5 @@ while (i <= len) {
 // koniec kodu
 
 console.log(valid);
+
+//perfect

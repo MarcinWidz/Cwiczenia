@@ -7,3 +7,6 @@ while (i <= num) {
   i++;
 }
 console.log(sum);
+
+
+//Perfect
