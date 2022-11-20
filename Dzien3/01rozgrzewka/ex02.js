@@ -1,11 +1,15 @@
-const generateString = num => {
+const generateString = (num) => {
   let str = "";
 
   // Poczatek
+  let i = 1;
+  while (i < num) {
+    str += "-";
+    i++;
+  }
+  // koniec
 
-  // Koniec
-
-  return str;
+  return (str += "o");
 };
 
 console.log(generateString(1)); // Ma zwrocic `o`
