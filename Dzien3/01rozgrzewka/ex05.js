@@ -9,12 +9,24 @@ const generateString = (height, width) => {
   let str = "";
 
   // Poczatek
+  for (let i = 0; i < height; i++) {
+    let j = 0;
+
+    while (j < width) {
+      str += "-";
+
+      if (j == width - 1) {
+        str += "\n";
+      }
+      j++;
+    }
+  }
 
   // Koniec
 
   return str;
 };
 
-const height = 3;
-const width = 5;
+const height = 5;
+const width = 6;
 console.log(generateString(height, width));
