@@ -1,12 +1,52 @@
+const box = (x, y) => {
+  let str = "";
+
+  // Poczatek
+  for (let j = 1; j <= y; j++) {
+    let i = 1;
+
+    while (i <= x) {
+      if ((i == 1 && j == 1) || (j == 1 && i == x)) {
+        str += "A";
+      } else {
+        if (j > 1 && j < y) {
+          if (i > 1 && i < x) {
+            str += " ";
+          } else {
+            str += "B";
+          }
+        } else {
+          if ((i == 1 && j == y) || (i == x && j == y)) {
+            str += "C";
+          } else {
+            str += "B";
+          }
+        }
+      }
+      if (i == x) {
+        str += "\n";
+      }
+      i++;
+    }
+  }
+
+  // Koniec
+
+  return str;
+};
+
+const x = 7;
+const y = 6;
+console.log(box(x, y));
+// Koniec
+
 // console.log(box(5, 3));
 
-// Ma zwrocic: 
+// Ma zwrocic:
 
 // ABBBA
 // B   B
 // CBBBC
-
-
 
 // console.log(box(5, 1));
 
@@ -14,13 +54,11 @@
 
 // ABBBA
 
-
 // console.log(box(1, 1));
 
 //Ma zwrocic
 
 // A
-
 
 //console.log(box(1, 5));
 
@@ -34,7 +72,7 @@
 
 //console.log(box(4, 4));
 
-//Ma zwrocic: 
+//Ma zwrocic:
 
 // ABBA
 // B  B
