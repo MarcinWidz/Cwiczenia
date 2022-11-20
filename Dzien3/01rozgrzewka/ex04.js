@@ -8,6 +8,16 @@
 */
 
 // Début de votre code
+const generateString = (num) => {
+  let string = "";
+  let str = "o---o\n";
+  let i = 0;
+  while (i < num) {
+    string += str;
+    i++;
+  }
+  return string;
+};
 
 // Fin de votre code
 
