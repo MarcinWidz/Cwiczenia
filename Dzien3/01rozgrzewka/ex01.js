@@ -1,8 +1,12 @@
-const generateString = num => {
+const generateString = (num) => {
   let str = "";
 
   // Poczatek
-
+  let i = 0;
+  while (i < num) {
+    str += "-";
+    i++;
+  }
   // koniec
 
   return str;
