@@ -7,3 +7,5 @@ const silnia = (num) => {
   return total;
 };
 console.log(silnia(8));
+
+//Gitara

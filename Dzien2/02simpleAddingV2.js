@@ -9,3 +9,5 @@ const simpleAdding = (num) => {
   return total;
 };
 console.log(simpleAdding(140));
+
+// Good

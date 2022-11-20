@@ -10,3 +10,5 @@ const checkNums = (num1, num2) => {
   }
 };
 checkNums(10, 7);
+
+// Good

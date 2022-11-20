@@ -7,3 +7,5 @@ function loop(total, limit) {
   console.log(total);
 }
 loop();
+
+//Good
