@@ -35,8 +35,8 @@ const box = (x, y) => {
   return str;
 };
 
-const x = 7;
-const y = 6;
+const x = 2;
+const y = 2;
 console.log(box(x, y));
 // Koniec
 
