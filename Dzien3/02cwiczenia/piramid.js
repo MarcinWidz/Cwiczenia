@@ -16,7 +16,7 @@ function piramid(size) {
     console.log(str);
   }
 }
-piramid(9);
+piramid(3);
 // utwórz funkcję piramid(size), która rysuje piramidę w terminalu.
 
 // console.log(pyramid(5));
