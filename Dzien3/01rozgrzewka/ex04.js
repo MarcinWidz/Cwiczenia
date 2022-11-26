@@ -7,7 +7,7 @@
   o---o
 */
 
-// Début de votre code
+// Poczatek
 const generateString = (num) => {
   let string = "";
   let str = "o---o\n";
@@ -19,7 +19,7 @@ const generateString = (num) => {
   return string;
 };
 
-// Fin de votre code
+// Koniec
 
 const height = 4;
 console.log(generateString(height));

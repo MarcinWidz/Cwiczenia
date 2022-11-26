@@ -6,6 +6,7 @@
 // |   |
 // D-*-C
 
+console.log(Boolean("chuj") == 1)
 
 
 // console.log(box(5, 1));
