@@ -84,7 +84,7 @@ function getCaseNumber(last_2) {
       last_2 = "osiemdziesiąt";
       break;
     case 90:
-      last_2 = "dziewięćziesiąt";
+      last_2 = "dziewięćdziesiąt";
       break;
     default:
       last_2 = "nope";
@@ -94,27 +94,54 @@ function getCaseNumber(last_2) {
 }
 
 function NumberToLetters(num) {
-  let last_2 = "";
-  let getNum = num;
-  let getCaseNumber = "";
-
+  let minus = false;
+  if (num < 0) {
+    minus = true;
+    num = -num;
+  }
   let thousand = Math.floor(num / 1000);
   let hundred = Math.floor((num % 1000) / 100);
   let tens = Math.floor(((num % 1000) % 100) / 10);
+  let last = num % 10;
   console.log(
-    `thousand: ${thousand}\nhundred: ${hundred}\ntens: ${tens} / num: ${num} / getNum: ${getNum}`
+    `thousand: ${thousand}\nhundred: ${hundred}\ntens: ${tens} / num: ${num}`
   );
-
-  getCaseNumber = getCaseNumber(num);
-  if (thousand > 1 && thousand <= 4) {
-    console.log(`${thousand}tysiące`);
-  } else if (thousand > 4) {
-    console.log(`${thousand}tysięcy`);
+  let minusString;
+  if (minus == true) {
+    minusString = "minus";
   } else {
-    console.log(`${thousand}tysiąc`);
+    minusString = "";
   }
+  let thousandString = getCaseNumber(thousand);
+  if (thousand > 1 && thousand <= 4) {
+    thousandString = `${thousandString} tysiące`;
+  } else if (thousand > 4) {
+    thousandString = `${thousandString} tysięcy`;
+  } else {
+    thousandString = ` tysiąc`;
+  }
+
+  let hundredString = getCaseNumber(hundred);
+  if (hundred > 3 && hundred <= 4) {
+    hundredString = `${hundredString}sta`;
+  } else if (hundred > 4) {
+    hundredString = `${hundredString}set`;
+  } else if (hundred == 1) {
+    hundredString = `sto`;
+  } else if (hundred == 2) {
+    hundredString = `dwieście`;
+  }
+
+  let tensString = getCaseNumber(tens * 10);
+
+  let lastString = getCaseNumber(last);
+
+  console.log(
+    `${minusString} ${thousandString} ${hundredString} ${tensString} ${lastString}`
+  );
 }
-console.log(getCaseNumber(1212));
+
+console.log(NumberToLetters(-8758));
 //NumberToLetters(1111);
 
 // NumberToLetters(15) ma zwrocic "pietnascie"
