@@ -3,12 +3,13 @@
 // Utwórz funkcję displayArray(tab, opcja), która jako parametr otrzyma tablicę ciągów znaków i zwróci ją w postaci ciągu znaków. Drugi parametr włączy separator "i" przed ostatnim elementem, czyli.
 
 function displayArray(tab, opcja) {
+  let message;
   if (opcja === false) {
-    tab = ["Bolon", "Spala", "Penis Grzegorz Sztuczny"];
+    message = tab.toString().replace(",", " ").replace(",", "");
   } else if (opcja === true) {
-    tab = ["Bolon1", "Spala1", "Penis Grzegorz Sztuczny1"];
+    message = `${tab[0]} ${tab[1]} i ${tab[2]}`;
   }
-  return tab;
+  return message;
 }
 console.log(displayArray(["Bolon", "Spala", "Penis Grzegorz Sztuczny"], false)); // Ma zwrocic "Bolon Spala Grzegorz Penis Sztuczny"
 console.log(displayArray(["Bolon", "Spala", "Penis Grzegorz Sztuczny"], true)); // Ma zwrocic "Bolon, Spala i Grzegorz Penis Sztuczny"
